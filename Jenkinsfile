@@ -15,29 +15,21 @@ pipeline {
 			parallel {
 				stage('test1') {
 					steps {
-						sh '''
-						pwd
-						sleep 5
-						echo This is the fist stage: DEPLOY
-						'''
+						sh 'sleep 2'
+						echo "phase1"
+						
 					}
 				}
 				stage('test2') {
 					steps {
-						sh '''
-						pwd
-						sleep 5
-						echo This is the fist stage: DEPLOY
-						'''
+						sh 'sleep 2'
+						echo "phase1"
 					}
 				}
 				stage('test3') {
 					steps {
-						sh '''
-						pwd
-						sleep 5
-						echo This is the fist stage: DEPLOY
-						'''
+						sh 'sleep 2'
+						echo "phase1"
 					}
 				}
 			}	
